@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, MapPin, Phone, Facebook, Music2 } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Music2, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -49,24 +49,25 @@ export default function Home() {
 
   const services = [
     {
-      title: "الإقامة الفاخرة",
-      description: "فنادق خمس نجوم قريبة من الحرم مع إطلالات مباشرة على الكعبة",
+      title: "مناسك صحيحة",
+      description:
+        "تعليم شامل لجميع مناسك الحج والعمرة وفقاً لأحكام الشريعة الإسلامية الصحيحة",
+      image:
+        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/rituals-NwzgRBNAdrcUoPoZWbJGPR.webp",
+    },
+    {
+      title: "خدمات مريحة",
+      description:
+        "توفير جميع الخدمات اللازمة من الإقامة والنقل والإرشاد لضمان راحة الحجاج",
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/services-5VuvTTx552aaxSQ2QPawAV.webp",
     },
     {
-      title: "النقل والمواصلات",
+      title: "رحلة آمنة",
       description:
-        "خدمات نقل مريحة وآمنة من المطار إلى الفندق وبين المواقع المقدسة",
+        "رحلة آمنة وموثوقة مع فريق متخصص يسهر على سلامة وراحة جميع الحجاج",
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/pilgrims-PLwATYvhciKmVuzeyEjwfQ.webp",
-    },
-    {
-      title: "الإرشاد الروحي",
-      description:
-        "موجهون متخصصون لشرح المناسك والأحكام الشرعية بطريقة سهلة وميسرة",
-      image:
-        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/rituals-NwzgRBNAdrcUoPoZWbJGPR.webp",
     },
   ];
 
@@ -86,6 +87,12 @@ export default function Home() {
           </div>
 
           <nav className="hidden md:flex gap-8">
+            <a
+              href="#about"
+              className="text-sm font-medium text-foreground hover:text-primary transition"
+            >
+              عن المجموعة
+            </a>
             <a
               href="#rituals"
               className="text-sm font-medium text-foreground hover:text-primary transition"
@@ -136,17 +143,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team Welcome Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* About Section */}
+      <section id="about" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="/manus-storage/team_welcome_bb702f21.jpg"
-                alt="فريق عمار بن ياسر"
-                className="rounded-lg shadow-lg"
-              />
+            <div className="flex justify-center">
+              <div className="relative w-64 h-80">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-3xl transform -rotate-6"></div>
+                <img
+                  src="/manus-storage/ceo_profile_7a170ac9.jpg"
+                  alt="د. عمار أحمد الجعلو - رئيس المجموعة"
+                  className="relative w-full h-full object-cover rounded-2xl shadow-xl"
+                />
+              </div>
             </div>
+            <div>
+              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                عن المجموعة
+              </h3>
+              <p className="text-lg text-foreground mb-6 leading-relaxed">
+                مجموعة عمار بن ياسر للحج والعمرة لخدمة حجاج بيت الله الحرام في جمهورية العربية السورية برئاسة الدكتور عمار أحمد الجعلو.
+              </p>
+              <p className="text-lg text-foreground leading-relaxed">
+                نرحب بكم في رحلة إيمانية مباركة. فريقنا المتخصص يسعى لتقديم أفضل الخدمات لضيوف الرحمن، برؤح من الإخلاص والأمانة. ونسأل الله أن يجعل رحلتكم مباركة ومقبولة، وأن يحفظكم في كل خطوة من خطوات هذه الرحلة المقدسة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Welcome Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 أهلاً وسهلاً بك
@@ -160,12 +189,19 @@ export default function Home() {
                 من خطوات هذه الرحلة المقدسة.
               </p>
             </div>
+            <div>
+              <img
+                src="/manus-storage/team_welcome_bb702f21.jpg"
+                alt="فريق عمار بن ياسر"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Rituals Section */}
-      <section id="rituals" className="py-16 md:py-24 bg-background">
+      <section id="rituals" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
             المناسك الصحيحة
@@ -178,7 +214,7 @@ export default function Home() {
                 className="p-6 border-2 border-border hover:border-accent hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl text-accent font-bold">{idx + 1}</span>
+                  <CheckCircle2 className="w-6 h-6 text-accent" />
                 </div>
                 <h4 className="text-xl font-bold text-primary mb-3">
                   {ritual.title}
@@ -193,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 md:py-24 bg-white">
+      <section id="services" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
             خدماتنا المميزة
@@ -233,7 +269,7 @@ export default function Home() {
             تواصل معنا
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {/* Contact Numbers */}
             <div className="space-y-6">
               <h4 className="text-xl font-bold mb-6">أرقام التواصل</h4>
@@ -277,18 +313,21 @@ export default function Home() {
                 );
               })}
             </div>
-          </div>
 
-          {/* Email Contact */}
-          <div className="mt-12 text-center">
-            <p className="text-primary-foreground/80 mb-4">أو أرسل لنا بريداً إلكترونياً</p>
-            <a
-              href="mailto:info@amarbnyasir.com"
-              className="inline-flex items-center gap-2 text-accent hover:text-secondary transition font-bold"
-            >
-              <Mail className="w-5 h-5" />
-              info@amarbnyasir.com
-            </a>
+            {/* Email Contact */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-bold mb-6">البريد الإلكتروني</h4>
+              <a
+                href="mailto:ammarbiinyaser@gmail.com"
+                className="flex items-center gap-4 p-4 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 transition"
+              >
+                <Mail className="w-6 h-6 text-accent flex-shrink-0" />
+                <div>
+                  <p className="text-sm opacity-80">أرسل لنا بريداً</p>
+                  <p className="font-bold text-sm break-all">ammarbiinyaser@gmail.com</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>

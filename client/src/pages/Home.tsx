@@ -73,20 +73,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation Header */}
+      {/* Navigation Header - بدون شعار */}
       <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">ع</span>
-            </div>
-            <div>
-              <h1 className="text-lg font-bold text-primary">عمار بن ياسر</h1>
-              <p className="text-xs text-muted-foreground">للحج والعمرة</p>
-            </div>
-          </div>
+          <div></div>
 
-          <nav className="hidden md:flex gap-8">
+          <nav className="flex gap-8">
             <a
               href="#about"
               className="text-sm font-medium text-foreground hover:text-primary transition"
@@ -164,26 +156,35 @@ export default function Home() {
               <p className="text-lg text-foreground mb-6 leading-relaxed">
                 مجموعة عمار بن ياسر للحج والعمرة لخدمة حجاج بيت الله الحرام في جمهورية العربية السورية برئاسة الدكتور عمار أحمد الجعلو.
               </p>
-              <p className="text-lg text-foreground leading-relaxed">
-                نرحب بكم في رحلة إيمانية مباركة. فريقنا المتخصص يسعى لتقديم أفضل الخدمات لضيوف الرحمن، برؤح من الإخلاص والأمانة. ونسأل الله أن يجعل رحلتكم مباركة ومقبولة، وأن يحفظكم في كل خطوة من خطوات هذه الرحلة المقدسة.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Group Banner Section */}
+      <section className="py-12 md:py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="/manus-storage/group_banner_3e25b44d.jpg"
+              alt="مجموعة عمار بن ياسر للحج والعمرة"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          <p className="text-center text-lg font-bold text-primary mt-6">
+            مجموعة عمار بن ياسر للحج والعمرة
+          </p>
+        </div>
+      </section>
+
       {/* Team Welcome Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 أهلاً وسهلاً بك
               </h3>
-              <p className="text-lg text-foreground mb-4 leading-relaxed">
-                نرحب بكم في رحلة إيمانية مباركة. فريقنا المتخصص يسعى لتقديم أفضل
-                الخدمات لضيوف الرحمن، برؤح من الإخلاص والأمانة.
-              </p>
               <p className="text-lg text-foreground leading-relaxed">
                 ونسأل الله أن يجعل رحلتكم مباركة ومقبولة، وأن يحفظكم في كل خطوة
                 من خطوات هذه الرحلة المقدسة.
@@ -201,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* Rituals Section */}
-      <section id="rituals" className="py-16 md:py-24 bg-white">
+      <section id="rituals" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
             المناسك الصحيحة
@@ -229,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 md:py-24 bg-background">
+      <section id="services" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
             خدماتنا المميزة

@@ -53,21 +53,21 @@ export default function Home() {
       description:
         "تعليم شامل لجميع مناسك الحج والعمرة وفقاً لأحكام الشريعة الإسلامية الصحيحة",
       image:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/rituals-NwzgRBNAdrcUoPoZWbJGPR.webp",
     },
     {
       title: "خدمات مريحة",
       description:
         "توفير جميع الخدمات اللازمة من الإقامة والنقل والإرشاد لضمان راحة الحجاج",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/services-5VuvTTx552aaxSQ2QPawAV.webp",
     },
     {
       title: "رحلة آمنة",
       description:
         "رحلة آمنة وموثوقة مع فريق متخصص يسهر على سلامة وراحة جميع الحجاج",
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/pilgrims-PLwATYvhciKmVuzeyEjwfQ.webp",
     },
   ];
 

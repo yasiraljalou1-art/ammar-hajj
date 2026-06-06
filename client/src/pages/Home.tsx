@@ -53,21 +53,21 @@ export default function Home() {
       description:
         "تعليم شامل لجميع مناسك الحج والعمرة وفقاً لأحكام الشريعة الإسلامية الصحيحة",
       image:
-        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/rituals-NwzgRBNAdrcUoPoZWbJGPR.webp",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
     },
     {
       title: "خدمات مريحة",
       description:
         "توفير جميع الخدمات اللازمة من الإقامة والنقل والإرشاد لضمان راحة الحجاج",
       image:
-        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/services-5VuvTTx552aaxSQ2QPawAV.webp",
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
     },
     {
       title: "رحلة آمنة",
       description:
         "رحلة آمنة وموثوقة مع فريق متخصص يسهر على سلامة وراحة جميع الحجاج",
       image:
-        "https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/pilgrims-PLwATYvhciKmVuzeyEjwfQ.webp",
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
     },
   ];
 
@@ -113,7 +113,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663734427491/kNWeAaYUc6wbv4ttXXQTBm/hero_bg-GAiKjzA36maiuzVegFZVya.webp')",
+              "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
@@ -143,7 +143,7 @@ export default function Home() {
               <div className="relative w-64 h-80">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-3xl transform -rotate-6"></div>
                 <img
-                  src="/manus-storage/ceo_profile_7a170ac9.jpg"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop"
                   alt="د. عمار أحمد الجعلو - رئيس المجموعة"
                   className="relative w-full h-full object-cover rounded-2xl shadow-xl"
                 />
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/manus-storage/group_banner_3e25b44d.jpg"
+                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=400&fit=crop"
               alt="مجموعة عمار بن ياسر للحج والعمرة"
               className="w-full h-auto object-cover"
             />
@@ -192,7 +192,7 @@ export default function Home() {
             </div>
             <div>
               <img
-                src="/manus-storage/team_welcome_bb702f21.jpg"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
                 alt="فريق عمار بن ياسر"
                 className="rounded-lg shadow-lg"
               />

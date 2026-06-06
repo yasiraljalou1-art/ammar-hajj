@@ -143,7 +143,7 @@ export default function Home() {
               <div className="relative w-64 h-80">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-3xl transform -rotate-6"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663734427491/aETeWrCakvdpOmMe.jpg"
                   alt="د. عمار أحمد الجعلو - رئيس المجموعة"
                   className="relative w-full h-full object-cover rounded-2xl shadow-xl"
                 />
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img
-                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=400&fit=crop"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663734427491/KjtoOUthGNuCIkZZ.jpg"
               alt="مجموعة عمار بن ياسر للحج والعمرة"
               className="w-full h-auto object-cover"
             />
@@ -192,7 +192,7 @@ export default function Home() {
             </div>
             <div>
               <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663734427491/ucqnClVvkOZPTLBV.jpg"
                 alt="فريق عمار بن ياسر"
                 className="rounded-lg shadow-lg"
               />
